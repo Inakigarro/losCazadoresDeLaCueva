@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/minecraftia" type="text/css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="backgroundImage"></div>
+    <div class="everything">
+        <header class="headerArea header">
+            <img src="../assets/header.png" alt="Los Cazadores de la Cueva">
+        </header>
+        <nav class="navArea navPanel">
+            <ul class="navList">
+                <li class="navListItem"><a class="navItem" href="../index.html">Inicio</a></li>
+                <li class="navListItem"><a class="navItem" href="./creadores.html">Creadores</a></li>
+                <li class="navListItem"><a class="navItem" href="./nuetrosJuegos.html">Nuestros Juegos</a></li>
+                <li class="navListItem"><a class="navItem" href="./live.html">En vivo</a></li>
+                <li class="navListItem"><a class="navItem" href="./contacto.html">Contactanos</a></li>
+            </ul>
+        </nav>
+        <main class="mainContentArea mainContent">
+            <ul class="canales">
+                <li class="canal">
+                    <span>Zaky</span>
+                    <div id="twitch-zaky"></div>
+                </li>
+                <li class="canal">
+                    <span>Gavero</span>
+                    <div id="twitch-gavero"></div>
+                </li>
+                <li class="canal">
+                    <span>DaceUy</span>
+                    <div id="twitch-dace"></div>
+                </li>
+            </ul>
+        </main>
+        <footer class="footerArea footer">
+            <div class="fundador">
+                <h3 class="tituloFundador">Zaky</h3>
+                <ul class="redesFundador">
+                    <li>
+                        <img class="redesLogo" src="../assets/instagram.png" alt="instagram logo">
+                        <a href="https://www.instagram.com/zaky7tw/" target="_blank">Instagram</a>
+                    </li>
+                    <li>
+                        <img class="redesLogo" src="../assets/twitter.png" alt="twitter logo">
+                        <a href="https://twitter.com/inakigarro" target="_blank">Twitter</a>
+                    </li>
+                    <li>
+                        <img class="redesLogo" src="../assets/twitch.png" alt="twitch logo">
+                        <a href="https://www.twitch.tv/zaky7lol" target="_blank">Twitch</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fundador">
+                <h3 class="tituloFundador">Gavero</h3>
+                <ul class="redesFundador">
+                    <li>
+                        <img class="redesLogo" src="../assets/instagram.png" alt="instagram logo">
+                        <a href="https://www.instagram.com/gav3ro" target="_blank">Instagram</a>
+                    </li>
+                    <li>
+                        <img class="redesLogo" src="../assets/twitter.png" alt="twitter logo">
+                        <a href="https://twitter.com/GaveroYT" target="_blank">Twitter</a>
+                    </li>
+                    <li>
+                        <img class="redesLogo" src="../assets/twitch.png" alt="twitch logo">
+                        <a href="https://www.twitch.tv/gavero" target="_blank">Twitch</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fundador">
+                <h3 class="tituloFundador">Dace</h3>
+                <ul class="redesFundador">
+                    <li>
+                        <img class="redesLogo" src="../assets/instagram.png" alt="instagram logo">
+                        <a href="https://www.instagram.com/k.reyes.8" target="_blank">Instagram</a>
+                    </li>
+                    <li>
+                        <img class="redesLogo" src="../assets/twitter.png" alt="twitter logo">
+                        <a href="https://twitter.com/DaceUy" target="_blank">Twitter</a>
+                    </li>
+                    <li>
+                        <img class="redesLogo" src="../assets/twitch.png" alt="twitch logo">
+                        <a href="https://www.twitch.tv/daceuy" target="_blank">Twitch</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <!-- Load the Twitch embed JavaScript file -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-zaky", {
+        width: "80%",
+        height: "70%",
+        channel: "zaky7lol",
+        layout: "video"
+      });
+      new Twitch.Embed("twitch-gavero", {
+        width: "80%",
+        height: "70%",
+        channel: "gavero",
+        layout: "video"
+      });
+      new Twitch.Embed("twitch-dace", {
+        width: "80%",
+        height: "70%",
+        channel: "daceuy",
+        layout: "video"
+      });
+    </script>
+</body>
+</html>
