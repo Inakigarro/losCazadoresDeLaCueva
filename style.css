@@ -184,6 +184,23 @@
         background-size: cover;
     }
 
+    .ftbg {
+        background-image: url('./assets/juegos/ft.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .mcbg {
+        background-image: url('./assets/juegos/mc.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .etsbg {
+        background-image: url('./assets/juegos/ets.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     .tituloJuegos {
         font-family: 'MinecraftiaRegular';
         font-size: 2.25vw;
@@ -240,13 +257,15 @@
         padding: 0;
         width: 100%;
         overflow-y: scroll;
-    }
+    }   
 
-        .canales .canal {
-            width: 90%;
-            height: 90%;
-            margin: 2.5%;
-        }
+    .canal {
+        height: 98% !important;
+    }
+    
+    .twitchSource {
+        height: 90%;
+    }
 
 @media (max-width: 991px) {
     .mainGrid {
