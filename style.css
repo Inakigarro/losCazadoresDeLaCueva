@@ -24,7 +24,7 @@
 .transparent-component {
     /* Transparent background */
     border: 1px solid black;
-    background-color: rgba(247, 238, 228, 0.438);
+    background-color: rgba(247, 238, 228, 0.274);
 }
 
 .mainGrid {
@@ -166,109 +166,40 @@
 
     .tituloCreadores {
         font-family: 'MinecraftiaRegular';
+        font-size: 2.25vw;
         height: fit-content;
     }
-
-    .creadores {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        
-        
-        align-items: flex-start;
-        overflow-y: scroll;
-
-        list-style: none;
-        padding: 0;
-
-        height: auto;
-        width: 100%;
-    }
-
-        .creador {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            
-            /* Transparent background */
-            background-color: rgba(247, 238, 228, 0.438);
-
-            width: 250px;
-            height: max-content;
-            margin: 2%;
-            border-radius: 20px;
-        }
-            .creador hr {
-                width: auto;
-                height: 5px;
-                background-color: black;
-            }
-
-                 .creador .tituloCreador {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                     .creador .tituloCreador .imagenCreador {
-                        width: 30px;
-                        border-radius: 50%;
-                    }
-
-                    .creador .tituloCreador .nombreCreador {
-                        text-align: center;
-                        height: fit-content;
-                        margin: 10px;
-                    }
-
-            .creador .descripcionCreador {
-                list-style: none;
-                padding: 15px;
-                height: fit-content;
-            }
-
-                .creador .descripcionCreador li {
-                    height: fit-content;
-                    text-align: center;
-                    text-transform: uppercase;
-                }
 
     /* Nuestros Juegos */
     
+    .lolbg {
+        background-image: url('./assets/juegos/lol.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .csbg {
+        background-image: url('./assets/juegos/csgo.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     .tituloJuegos {
         font-family: 'MinecraftiaRegular';
+        font-size: 2.25vw;
         height: fit-content;
     }
 
-    .nuestrosJuegos {
-        margin: 1.5%;
-        overflow-y: scroll;
+    .tituloJuego {
+        font-family: fantasy;
+        font-size: 1.75vw;
     }
-    
-         .nuestrosJuegos .juego {
-            width: auto;
-            height: auto;
-            margin: 1.5%;
-            border-radius: 15px;
-            /* Transparent background */
-            background-color: rgba(247, 238, 228, 0.438);
-        }
-             .nuestrosJuegos .juego .tituloJuego {
-                width: 100%;
-                text-align: center;
-            }
 
-            .nuestrosJuegos .juego hr {
-                width: auto;
-                height: 5px;
-                background-color: black;
-            }
-
-            .nuestrosJuegos .juego .descripcionJuego {
-                overflow-wrap: break-word;
-                padding: 10px;
-            }
+    .descripcionJuego {
+        color: white;
+        font-size: 1vw;
+        text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(84, 84, 85), 0 0 0.2em rgb(132, 132, 134);
+    }
 
     /* contactanos */
 
@@ -372,6 +303,9 @@
         font-size: 2.5vw;
     }
 
+    .tituloCreadores {
+        font-size: 8vw;
+    }
 
     .tituloFundador{
         font-size: medium;
@@ -385,5 +319,22 @@
     .redesLogo{
         margin-right: 1%;
         transform: scale(1.3);
+    }
+
+    .tituloJuegos {
+        font-family: 'MinecraftiaRegular';
+        font-size: 3vw;
+        height: fit-content;
+    }
+    
+    .tituloJuego {
+        font-family: fantasy;
+        font-size: 2vw;
+    }
+
+    .descripcionJuego {
+        color: white;
+        font-size: 1.75vw;
+        text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(84, 84, 85), 0 0 0.2em rgb(132, 132, 134);
     }
 }
