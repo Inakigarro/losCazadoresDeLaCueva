@@ -6,96 +6,121 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/minecraftia" type="text/css" />
-        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <title>Los Cazadores de la Cueva</title>
     </head>
-
     <body>
         <div class="backgroundImage"></div>
-        <div class="everything">
-            <header class="headerArea header">
-                <img src="./assets/header.png" alt="Los Cazadores de la Cueva">
+        <div class="mainGrid">
+            <header class="headerArea header h-auto w-auto d-flex flex-row justify-content-center align-items-center transparent-base">
+                <img class="img-fluid" src="./assets/header.png" alt="Los Cazadores de la Cueva">
             </header>
-            <nav class="navArea navPanel">
-                <ul class="navList">
-                    <li class="navListItem"><a class="navItem" href="./index.html">Inicio</a></li>
-                    <li class="navListItem"><a class="navItem" href="./pages/creadores.html">Creadores</a></li>
-                    <li class="navListItem"><a class="navItem" href="./pages/nuetrosJuegos.html">Nuestros Juegos</a></li>
-                    <li class="navListItem"><a class="navItem" href="./pages/live.html">En vivo</a></li>
-                    <li class="navListItem"><a class="navItem" href="./pages/contacto.html">Contactanos</a></li>
+            <nav class="navArea navPanel navbar h-auto transparent-base">
+                <ul class="navList d-flex flex-lg-column flex-md-row flex-sm-row flex-nowrap justify-content-sm-evenly justify-content-center align-items-center w-100 p-0 list-unstyled text-center">
+                    <li class="navListItem d-flex justify-content-center align-items-center">
+                        <a class="navItem h-50 w-75 m-auto d-flex flex-row justify-content-center align-items-center text-center" href="./index.html">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="navListItem d-flex justify-content-center align-items-center">
+                        <a class="navItem h-50 w-75 m-auto d-flex flex-row justify-content-center align-items-center text-center" href="./pages/creadores.html">
+                            Nosotros
+                        </a>
+                    </li>
+                    <li class="navListItem d-flex justify-content-center align-items-center">
+                        <a class="navItem h-50 w-75 m-auto d-flex flex-row justify-content-center align-items-center text-center" href="./pages/nuetrosJuegos.html">
+                            Juegos
+                        </a>
+                    </li>
+                    <li class="navListItem d-flex justify-content-center align-items-center">
+                        <a class="navItem h-50 w-75 m-auto d-flex flex-row justify-content-center align-items-center text-center" href="./pages/live.html">
+                            En vivo
+                        </a>
+                    </li>
+                    <li class="navListItem d-flex justify-content-center align-items-center">
+                        <a class="navItem h-50 w-75 m-auto d-flex flex-row justify-content-center align-items-center text-center" href="./pages/contacto.html">
+                            Contacto
+                        </a>
+                    </li>
                 </ul>
             </nav>
-            <main class="mainContenArea mainContent">
-                <div>
-                    <div class="tituloDescripcion">
-                        <img class="LCdlCLogo" src="./assets/Recurso 1.png" alt="Logo Los Cazadores de la Cueva">
-                        <h2>Los Cazadores de la Cueva</h2>
+            <main class="mainContenArea mainContent transparent-base d-flex flex-column justify-content-center align-items-center w-100">
+                <div class="">
+                    <div class="tituloDescripcion d-flex flex-column flex-nowrap justify-content-start align-items-center h-auto my-4">
+                        <img class="img-fluid" src="./assets/Recurso 1.png" alt="Logo Los Cazadores de la Cueva">
+                        <h2 class="h2 fw-bold text-center h-auto">Los Cazadores de la Cueva</h2>
                     </div>
-                    <div class="descripcion">
-                        <p>
-                            Somos un grupo de stremears hispanohablantes, enfocados en crear
-                        </p>
-                        <p>
-                            contenido de una amplia variedad de juegos como
-                        </p>
-                        <p>Minecraft, League of Legends, Counter Strike, Valorant, Fortnite, entre otros…</p>
-                        <br>
-                        <p>TE INVITAMOS A QUE NOS SIGAS Y NOS ACOMPAÑES EN NUESTRAS AVENTURAS</p>
+                    <div class="descripcion d-flex flex-column align-items-center transparent-component h-auto w-auto p-3">
+                            <p class="fw-bold text-center text-break">
+                                Somos un grupo de stremears hispanohablantes, enfocados en crear
+                            </p>
+                            <p class="fw-bold text-center text-break">
+                                contenido de una amplia variedad de juegos como
+                            </p>
+                            <p class="fw-bold text-center text-break">
+                                Minecraft, League of Legends, Counter Strike, Valorant, Fortnite, entre otros…
+                            </p>
+                            <br>
+                            <p class="fw-bold text-center text-break">
+                                TE INVITAMOS A QUE NOS SIGAS Y NOS ACOMPAÑES EN NUESTRAS AVENTURAS
+                            </p>    
                     </div>
                 </div>
             </main>
-            <footer class="footerArea footer">
-                <div class="fundador">
-                    <h3 class="tituloFundador">Zaky</h3>
+            <footer class="footerArea footer d-flex flex-row justify-content-evenly align-items-center w-100 h-auto transparent-base">
+                <div class="fundador d-flex flex-column justify-content-start transparent-component">
+                    <h5 class="tituloFundador">Zaky</h5>
                     <ul class="redesFundador">
-                        <li>
-                            <img class="redesLogo" src="./assets/instagram.png" alt="instagram logo">
+                        <li class="d-flex flex-row align-items-center h-auto">
+                            <img class="redesLogo img-fluid" src="./assets/instagram.png" alt="instagram logo">
                             <a href="https://www.instagram.com/zaky7tw/" target="_blank">Instagram</a>
                         </li>
-                        <li>
-                            <img class="redesLogo" src="./assets/twitter.png" alt="twitter logo">
+                        <li class="d-flex flex-row align-items-center h-auto">
+                            <img class="redesLogo img-fluid" src="./assets/twitter.png" alt="twitter logo">
                             <a href="https://twitter.com/inakigarro" target="_blank">Twitter</a>
                         </li>
-                        <li>
-                            <img class="redesLogo" src="./assets/twitch.png" alt="twitch logo">
+                        <li class="d-flex flex-row align-items-center h-auto">
+                            <img class="redesLogo img-fluid" src="./assets/twitch.png" alt="twitch logo">
                             <a href="https://www.twitch.tv/zaky7lol" target="_blank">Twitch</a>
                         </li>
                     </ul>
                 </div>
-                <div class="fundador">
-                    <h3 class="tituloFundador">Gavero</h3>
+                <div class="fundador d-flex flex-column justify-content-start transparent-component">
+                    <h5 class="tituloFundador">Gavero</h5>
                     <ul class="redesFundador">
-                        <li>
-                            <img class="redesLogo" src="./assets/instagram.png" alt="instagram logo">
+                        <li class="d-flex flex-row align-items-center h-auto">
+                            <img class="redesLogo img-fluid" src="./assets/instagram.png" alt="instagram logo">
                             <a href="https://www.instagram.com/gav3ro" target="_blank">Instagram</a>
                         </li>
-                        <li>
-                            <img class="redesLogo" src="./assets/twitter.png" alt="twitter logo">
+                        <li class="d-flex flex-row align-items-center h-auto">
+                            <img class="redesLogo img-fluid" src="./assets/twitter.png" alt="twitter logo">
                             <a href="https://twitter.com/GaveroYT" target="_blank">Twitter</a>
                         </li>
-                        <li>
-                            <img class="redesLogo" src="./assets/twitch.png" alt="twitch logo">
+                        <li class="d-flex flex-row align-items-center h-auto">
+                            <img class="redesLogo img-fluid" src="./assets/twitch.png" alt="twitch logo">
                             <a href="https://www.twitch.tv/gavero" target="_blank">Twitch</a>
                         </li>
                     </ul>
                 </div>
-                <div class="fundador">
-                    <h3 class="tituloFundador">Dace</h3>
+                <div class="fundador d-flex flex-column justify-content-start transparent-component">
+                    <h5 class="tituloFundador">Dace</h5>
                     <ul class="redesFundador">
-                        <li>
-                            <img class="redesLogo" src="./assets/instagram.png" alt="instagram logo">
+                        <li class="d-flex flex-row align-items-center h-auto">
+                            <img class="redesLogo img-fluid" src="./assets/instagram.png" alt="instagram logo">
                             <a href="https://www.instagram.com/k.reyes.8" target="_blank">Instagram</a>
                         </li>
-                        <li>
-                            <img class="redesLogo" src="./assets/twitter.png" alt="twitter logo">
+                        <li class="d-flex flex-row align-items-center h-auto">
+                            <img class="redesLogo img-fluid" src="./assets/twitter.png" alt="twitter logo">
                             <a href="https://twitter.com/DaceUy" target="_blank">Twitter</a>
                         </li>
-                        <li>
-                            <img class="redesLogo" src="./assets/twitch.png" alt="twitch logo">
+                        <li class="d-flex flex-row align-items-center h-auto">
+                            <img class="redesLogo img-fluid" src="./assets/twitch.png" alt="twitch logo">
                             <a href="https://www.twitch.tv/daceuy" target="_blank">Twitch</a>
                         </li>
                     </ul>
                 </div>
             </footer>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     </body>
 </html>
