@@ -195,6 +195,7 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+
     .etsbg {
         background-image: url('./assets/juegos/ets.png');
         background-repeat: no-repeat;
@@ -235,20 +236,10 @@
             margin: 5%;
         }
 
-            #inputNombre, #inputApellido {
-                height: auto;
-                margin: 2.5%
-            }
-
         .formulario .contactanos .inputComentario {
             height: auto;
             width: 100%;
         }
-
-            .formulario .contactanos .inputComentarios #inputTextArea{
-                display: block;
-                height: auto;
-            }
 
     /* En vivo */
 
@@ -355,5 +346,11 @@
         color: white;
         font-size: 1.75vw;
         text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(84, 84, 85), 0 0 0.2em rgb(132, 132, 134);
+    }
+
+    .labelText {
+        width: 100%;
+        height: auto !important;
+        font-size: 100%;
     }
 }
