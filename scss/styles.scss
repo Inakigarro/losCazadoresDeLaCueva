@@ -9,7 +9,7 @@
     right: 0;
     z-index: 1;
     display: block;
-    background-image: url('./assets/background-image.png');
+    background-image: url('../assets/background-image.png');
     background-repeat: no-repeat;
     background-size: cover;
     filter: blur(10px);
@@ -173,31 +173,31 @@
     /* Nuestros Juegos */
     
     .lolbg {
-        background-image: url('./assets/juegos/lol.png');
+        background-image: url('../assets/juegos/lol.png');
         background-repeat: no-repeat;
         background-size: cover;
     }
 
     .csbg {
-        background-image: url('./assets/juegos/csgo.png');
+        background-image: url('../assets/juegos/csgo.png');
         background-repeat: no-repeat;
         background-size: cover;
     }
 
     .ftbg {
-        background-image: url('./assets/juegos/ft.png');
+        background-image: url('../assets/juegos/ft.png');
         background-repeat: no-repeat;
         background-size: cover;
     }
 
     .mcbg {
-        background-image: url('./assets/juegos/mc.png');
+        background-image: url('../assets/juegos/mc.png');
         background-repeat: no-repeat;
         background-size: cover;
     }
 
     .etsbg {
-        background-image: url('./assets/juegos/ets.png');
+        background-image: url('../assets/juegos/ets.png');
         background-repeat: no-repeat;
         background-size: cover;
     }
