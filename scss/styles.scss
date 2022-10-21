@@ -1,29 +1,30 @@
+@import './variablesGlobales';
+@import './funcionesGlobales';
+
 * {
     margin: 0;
     height: 100%;
 }
 
 .backgroundImage {
+    @include backgroundImage('../assets/background-image.png');
     position: fixed;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: $zIndexBackground;
     display: block;
-    background-image: url('../assets/background-image.png');
-    background-repeat: no-repeat;
-    background-size: cover;
     filter: blur(10px);
 }
 
 .transparent-base {
     /* Transparent background */
     background-color: rgba(250, 235, 215, 0.356);
-    border: 1px solid black;
+    border: $bordeComponente;
 }
 
 .transparent-component {
     /* Transparent background */
-    border: 1px solid black;
+    border: $bordeComponente;
     background-color: rgba(247, 238, 228, 0.274);
 }
 
@@ -42,28 +43,18 @@
 /* Header */
 .headerArea {
     grid-area: header;
-}
 
-.header {
-    z-index: 10;
-
-    /* Ancho y Alto */
-    /* height: auto; */
+    z-index: $zIndexComponent;
 
     /* margin  */
     margin-bottom: 1%;
-
-    /* display
-    display: flex; */
 }
 
 /* Navigation */
 .navArea {
     grid-area: nav;
-}
 
-.navPanel {
-    z-index: 10;
+    z-index: $zIndexComponent;
 
     /* Margin */
     margin-right: 5%;
@@ -78,39 +69,36 @@
 
 .navItem {
     background-color: white;
-    border: 1px solid black;
+    border: $bordeComponente;
     border-radius: 25px;
 
     font-size: 1.25vw;
-}
 
-    a.navItem, a.navItem:active {
+    /* Styles */
+    text-decoration: none;
+    color: black;
+
+    font-family: $fuentePrincipal;
+    font-weight: bold;
+    font-style: normal;
+
+    &:active{
         /* Styles */
         text-decoration: none;
         color: black;
-
-        font-family: 'MinecraftiaRegular';
-        font-weight: bold;
-        font-style: normal;
     }
-
-/* Main */
-.mainContenArea {
-    grid-area: mainContent;
 }
 
-.mainContent{
-    z-index: 10;
+/* Main */
+.mainContentArea {
+    grid-area: mainContent;
+    z-index: $zIndexComponent;
 }
 
 /* Footer */
 .footerArea {
     grid-area: footer;
-}
-
-.footer {
-    z-index: 10;
-    
+    z-index: $zIndexComponent;
     /* Margin */
     margin-top: 1%;
 }
@@ -121,14 +109,22 @@
 }
 
 .redesFundador {
-    list-style: none;
+    list-style: $estiloLista;
     height: 80%;
     font-size: 1vw;
 }
 
-.redesFundador li a, .redesFundador li a:active {
-    color: inherit;
-    text-decoration: none;
+.redesFundador {
+    li {
+        a {
+            color: inherit;
+            text-decoration: none;
+            &:active{
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+    }
 }
 
 .redesLogo {
@@ -143,73 +139,65 @@
     /* Inicio */
 
     .tituloDescripcion {
-        font-family: 'MinecraftiaRegular';
+        font-family: $fuentePrincipal;
         font-weight: normal;
         font-style: normal;
         font-size: 2.25vw;
-    }
-
-    .tituloDescripcion img {
-        width: 11vw;
+        img {
+            width: 11vw;
+        }
     }
 
      .descripcion {
         border-radius: 20px;
     }
 
-    .descripcion p {
+    .descripcion {
+        p {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 1.3vw;
+        }
     }
 
     /* Creadores */
 
     .tituloCreadores {
-        font-family: 'MinecraftiaRegular';
+        font-family: $fuentePrincipal;
         font-size: 2.25vw;
         height: fit-content;
     }
 
     /* Nuestros Juegos */
     
-    .lolbg {
-        background-image: url('../assets/juegos/lol.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+        /* imagenes fondos carrusel */
+        .lolbg {
+            @include backgroundImage('../assets/juegos/lol.png')
+        }
 
-    .csbg {
-        background-image: url('../assets/juegos/csgo.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+        .csbg {
+            @include backgroundImage('../assets/juegos/csgo.png');
+        }
 
-    .ftbg {
-        background-image: url('../assets/juegos/ft.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+        .ftbg {
+            @include backgroundImage('../assets/juegos/ft.png');
+        }
 
-    .mcbg {
-        background-image: url('../assets/juegos/mc.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+        .mcbg {
+            @include backgroundImage('../assets/juegos/mc.png');
+        }
 
-    .etsbg {
-        background-image: url('../assets/juegos/ets.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+        .etsbg {
+            @include backgroundImage('../assets/juegos/ets.png');
+        }
 
     .tituloJuegos {
-        font-family: 'MinecraftiaRegular';
+        font-family: $fuentePrincipal;
         font-size: 2.25vw;
         height: fit-content;
     }
 
     .tituloJuego {
-        font-family: fantasy;
+        font-family: $fuenteTituloCarrusel;
         font-size: 1.75vw;
     }
 
@@ -222,29 +210,30 @@
     /* contactanos */
 
     .tituloContactanos {
-        font-family: 'MinecraftiaRegular';
+        font-family: $fuentePrincipal;
         height: fit-content;
     }
     
     .formulario {
         padding: 0;
         border: none;
+
+        .contactanos {
+            .inputNombreApellido{
+                height: 10%;
+                margin: 5%;
+            }
+            .inputComentario {
+                height: auto;
+                width: 100%;
+            }
+        }
     }
-
-        .formulario .contactanos .inputNombreApellido {
-            height: 10%;
-            margin: 5%;
-        }
-
-        .formulario .contactanos .inputComentario {
-            height: auto;
-            width: 100%;
-        }
 
     /* En vivo */
 
     .canales {
-        list-style: none;
+        list-style: $estiloLista;
         padding: 0;
         width: 100%;
         overflow-y: scroll;
@@ -270,11 +259,13 @@
             "footer";
     }
 
-    .header img {
-        transform: scale(0.8, 1);
-    }
+    .headerArea {
+        img {
+            transform: scale(0.8, 1);
+        }
+    } 
 
-    .navPanel {
+    .navArea {
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -302,15 +293,16 @@
         margin-top: 5%;
         margin-bottom: 2%;
         font-size: 1.25vw;
+        img {
+            width: 20vw;
+        }
     }
 
-    .tituloDescripcion img {
-        width: 20vw;
-    }
-
-    .descripcion p {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 2.5vw;
+    .descripcion {
+        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 2.5vw;
+        }
     }
 
     .tituloCreadores {
@@ -322,30 +314,31 @@
         margin-bottom: 5%
     }
 
-    .redesFundador li {
-        margin-bottom: 8%;
-        font-size: 1vw
+    .redesFundador {
+        li {
+            margin-bottom: 8%;
+            font-size: 1vw
+        }
     }
+
     .redesLogo{
         margin-right: 1%;
         transform: scale(1.3);
     }
 
     .tituloJuegos {
-        font-family: 'MinecraftiaRegular';
+        font-family: $fuentePrincipal;
         font-size: 3vw;
         height: fit-content;
     }
     
     .tituloJuego {
-        font-family: fantasy;
+        font-family: $fuenteTituloCarrusel;
         font-size: 2vw;
     }
 
     .descripcionJuego {
-        color: white;
         font-size: 1.75vw;
-        text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(84, 84, 85), 0 0 0.2em rgb(132, 132, 134);
     }
 
     .labelText {
@@ -354,3 +347,4 @@
         font-size: 100%;
     }
 }
+
