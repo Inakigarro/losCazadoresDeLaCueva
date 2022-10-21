@@ -241,6 +241,14 @@
 
     .canal {
         height: 98% !important;
+        a {
+            color: inherit;
+            text-decoration: none;
+            &:active{
+                color: inherit;
+                text-decoration: none;
+            }
+        }
     }
     
     .twitchSource {
