@@ -128,6 +128,10 @@
   font-size: 2.25vw;
   height: fit-content; }
 
+.listaCreadores {
+  overflow-y: scroll;
+  overflow-x: hidden; }
+
 /* Nuestros Juegos */
 /* imagenes fondos carrusel */
 .lolbg {

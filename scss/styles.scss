@@ -167,6 +167,11 @@
         height: fit-content;
     }
 
+    .listaCreadores {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
     /* Nuestros Juegos */
     
         /* imagenes fondos carrusel */
