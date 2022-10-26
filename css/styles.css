@@ -203,7 +203,7 @@
 .twitchSource {
   height: 90%; }
 
-@media (max-width: 991px) {
+@media only screen and (max-width: 991px) {
   .mainGrid {
     display: grid;
     grid-template-columns: 100%;
@@ -260,3 +260,11 @@
     width: 100%;
     height: auto !important;
     font-size: 100%; } }
+
+@media only screen and (max-width: 991px) and (orientation: landscape) {
+  .mainGrid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header " "nav" "mainContent" "footer";
+    overflow-y: auto; } }
