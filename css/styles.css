@@ -129,8 +129,7 @@
   height: fit-content; }
 
 .listaCreadores {
-  overflow-y: scroll;
-  overflow-x: hidden; }
+  overflow-y: scroll; }
 
 /* Nuestros Juegos */
 /* imagenes fondos carrusel */
@@ -162,6 +161,7 @@
 .tituloJuegos {
   font-family: "MinecraftiaRegular";
   font-size: 2.25vw;
+  font-weight: bold;
   height: fit-content; }
 
 .tituloJuego {
@@ -171,7 +171,9 @@
 .descripcionJuego {
   color: white;
   font-size: 1vw;
-  text-shadow: 1px 1px 2px black, 0 0 1em #545455, 0 0 0.2em #848486; }
+  text-shadow: 1px 1px 2px black, 0 0 1em #545455, 0 0 0.2em #848486;
+  overflow-y: scroll;
+  text-align: start; }
 
 /* contactanos */
 .tituloContactanos {
@@ -257,9 +259,9 @@
     height: fit-content; }
   .tituloJuego {
     font-family: fantasy;
-    font-size: 2vw; }
+    font-size: 2.75vw; }
   .descripcionJuego {
-    font-size: 1.75vw; }
+    font-size: 1.25vw; }
   .labelText {
     width: 100%;
     height: auto !important;
@@ -271,4 +273,5 @@
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto auto;
     grid-template-areas: "header " "nav" "mainContent" "footer";
-    overflow-y: auto; } }
+    overflow-y: auto; }
+  /* Nuestros Juegos */ }
