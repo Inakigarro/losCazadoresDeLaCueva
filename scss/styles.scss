@@ -112,9 +112,7 @@
     list-style: $estiloLista;
     height: 80%;
     font-size: 1vw;
-}
 
-.redesFundador {
     li {
         a {
             color: inherit;
@@ -329,14 +327,12 @@
 
     .redesFundador {
         li {
-            margin-bottom: 8%;
-            font-size: 1vw
+            font-size: 3.25vw
         }
     }
 
     .redesLogo{
-        margin-right: 1%;
-        transform: scale(1.3);
+        display: none;
     }
 
     .tituloJuegos {
@@ -373,8 +369,6 @@
     .btnEnviarFormulario{
         font-size: 3vw !important;
     }
-
-    /* contactanos */
 
     .tituloContactanos {
         font-size: 5vw;
